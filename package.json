@@ -1,0 +1,19 @@
+{
+  "name": "pagecrawler",
+  "version": "1.0.0",
+  "description": "A scraper that downloads a web page, and finds its composing elements",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Daniel Gogarty",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "mongod": "^1.3.0",
+    "mongodb": "^1.4.35",
+    "mongoose": "^4.0.2",
+    "mongoskin": "^1.4.13",
+    "request": "^2.55.0"
+  }
+}
