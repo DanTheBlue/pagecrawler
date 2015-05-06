@@ -2,13 +2,20 @@ var request = require("request");
 var cheerio = require("cheerio");
 var MongoClient = require('mongodb').MongoClient
 
-
-
+//The array of html elements
 var elements = [];
+//The array of text elements
 var text = [];
 
+var website = process.argv[2];
+
+if(website === null) {
+  website = "http://www.google.com";
+}
+
+
 request({
-  uri: "http://www.google.com",
+  uri: website,
 }, function(error, response, body) {
 
   //Parse as html
