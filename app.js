@@ -100,6 +100,7 @@ var checkIfExists = function(array, string) {
   return null;
 }
 
+/* Uses recursion to traverse down the list*/
 var traverseList = function(object) {
   if(object.type === 'tag'){
     //elements.push(object.name);
